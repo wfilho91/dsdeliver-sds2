@@ -5,14 +5,7 @@ type Props={
     products:Product[],
 }
 
-function formatPrice(price:number){
-    const formatter = Intl.NumberFormat('pt-BR',{
-        style: 'currency',
-        currency: 'BRL'
 
-    })
-    return formatter.format(price);
-}
 
 function ProductsList({products}:Props){
     
